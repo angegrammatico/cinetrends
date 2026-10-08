@@ -1,0 +1,23 @@
+# Secretos: NUNCA subir la API key
+.env
+
+# Entorno virtual de Python
+.venv/
+
+# Archivos que Python genera solo
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Datos: pesan mucho y se pueden volver a generar con el pipeline
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Mac
+.DS_Store
